@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scraper.Web", "Web\Scraper.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scraper.Services", "Services\Scraper.Services.csproj", "{A125CD0C-F675-4F3D-8DC7-A171DF47D707}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scraper.Models", "Models\Scraper.Models.csproj", "{C6D95453-26FF-4ED1-8F2A-A83C8D06D8D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A125CD0C-F675-4F3D-8DC7-A171DF47D707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A125CD0C-F675-4F3D-8DC7-A171DF47D707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A125CD0C-F675-4F3D-8DC7-A171DF47D707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D95453-26FF-4ED1-8F2A-A83C8D06D8D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D95453-26FF-4ED1-8F2A-A83C8D06D8D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D95453-26FF-4ED1-8F2A-A83C8D06D8D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D95453-26FF-4ED1-8F2A-A83C8D06D8D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
