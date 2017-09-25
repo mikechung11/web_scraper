@@ -2,30 +2,41 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="container-fluid">
-    <div class="row" style="margin-top:30px">
-        <div class="col-md-12">
-            <form class="form-horizontal">
-                <fieldset>
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Enter URL to Scrape</label>
-                        <div class="col-md-4">
-                            <input id="textinput" name="textinput" type="text" placeholder="https://www.google.com/" class="form-control input-md">
+<div ng-app="mainApp">
+    <div class="container-fluid" ng-controller="homeController as homeVm">
+        <div class="row" style="margin-top:30px">
+            <div class="col-md-12">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="textinput">Enter URL to Scrape</label>
+                            <div class="col-md-4">
+                                <input id="textinput" name="textinput" type="text" placeholder="https://www.google.com/" class="form-control input-md" ng-model="homeVm.url">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4">
-                            <button class="btn btn-primary">Button</button>
+                        <div class="form-group">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <button class="btn btn-primary" ng-click="homeVm.submit(homeVm.url)">Button</button>
+                            </div>
                         </div>
-                    </div>
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" />
+        <div class="row">
+            <div class="col-md-12">
+                <ul id="menu">
+                    <li class="col-md-2" style="display: inline" ng-repeat="item in homeVm.items">
+                        <img src="{{item.url}}" />
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
+
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/mainApp.js"></script>
+<script src="~/Scripts/Home/HomeController.js"></script>
+<script src="~/Scripts/service.js"></script>

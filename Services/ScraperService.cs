@@ -11,10 +11,10 @@ namespace Services
 {
     public class ScraperService
     {
-        string url = "temp url";
-
-        public List<Image> Scrape()
+        public List<Image> Scrape(Image model)
         {
+            string url = model.Url;
+
             List<Image> imageList = new List<Image>();
             var webClient = new WebClient();
             var html = webClient.DownloadString(url);
