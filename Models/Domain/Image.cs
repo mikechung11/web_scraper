@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Models
+namespace Models.Domain
 {
-    public class Class1
+    public class Image
     {
+        public string Url { get; set; }
     }
 }

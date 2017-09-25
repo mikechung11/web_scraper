@@ -216,6 +216,16 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Scraper.Models.csproj">
+      <Project>{c6d95453-26ff-4ed1-8f2a-a83c8d06d8d1}</Project>
+      <Name>Scraper.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Scraper.Services.csproj">
+      <Project>{a125cd0c-f675-4f3d-8dc7-a171df47d707}</Project>
+      <Name>Scraper.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
